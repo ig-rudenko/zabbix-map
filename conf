@@ -1,0 +1,4 @@
+[Zabbix]
+url=http://localhost/zabbix
+user=zabbixApiUser
+password=zabbixApiPassword

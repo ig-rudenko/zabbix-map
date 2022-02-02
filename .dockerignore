@@ -1,0 +1,11 @@
+*
+!/locations/
+!/static/
+!/templates/
+!/visual_map/
+!/zabbix_visual_map/
+!/db.sqlite3
+!/manage.py
+!/requirements.txt
+!/zabbix-api.py
+!/run.sh

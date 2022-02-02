@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Visual Map</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+    <h1>Интерактивная карта Zabbix</h1>
+
+    <div style="margin: 20px">
+        <div class="div1">
+            <a href="/automap">
+                <div class="mask">
+                    <img class="mask-img" src="/static/img/sevmap.gif">
+                </div>
+            </a>
+        </div>
+
+        <div class="div2">
+            <div class="talign">Автоматически обновляемая карта <br><br>
+                Каждые 2 минуты информация на карте синхронизируется с Zabbix</div>
+        </div>
+    </div>
+
+    <div style="margin: 20px">
+        <div class="div1">
+            <div class="mask">
+                <a href="/map"><img class="mask-img" src="/static/img/1.png"></a>
+            </div>
+        </div>
+
+        <div class="div2">
+            <div class="talign">Статичная карта <br><br> Для синхронизации необходимо обновлять страницу самостоятельно</div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

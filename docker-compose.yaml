@@ -1,0 +1,17 @@
+version: "3.1"
+
+services:
+  zabbix-map:
+    container_name: zabbix-map
+    build: .
+    environment:
+      DJANGO_SUPERUSER_NAME: root
+      DJANGO_SUPERUSER_EMAIL: root@example.ru
+      DJANGO_SUPERUSER_PASSWORD: password
+    command: /bin/bash ./run.sh
+    volumes:
+      - ./templates:/home/django/templates
+      - ./locations:/home/django/locations
+      - ./static:/home/django/static
+    ports:
+      - '8000:8000'

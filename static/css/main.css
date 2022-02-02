@@ -1,0 +1,65 @@
+
+
+.mask{
+    --uiMaskClipPath: var(--maskClipPath);
+    box-sizing: var(--maskBoxSizing, border-box);
+    display: var(--maskDisplay, inline-flex);
+    padding: var(--maskStrokeThickness, 3px);
+    clip-path: var(--uiMaskClipPath);
+    background-color: var(--maskStrokeColor, currentColor);
+    --maskStrokeColor: #414141; /* Цвет рамки */
+    --maskStrokeThickness: 5px; /* Ширина рамки */
+    --maskClipPath: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+}
+.mask-img{
+    max-width: 100%;
+    display: block;
+    clip-path: var(--uiMaskClipPath);
+}
+.mask,
+.mask-img{
+    transition: clip-path var(--maskAnimationDuration, .2s) var(--maskAnimationTimingFunction, ease-out);
+}
+.mask:hover,
+.mask:focus{
+    cursor: pointer;
+    --maskClipPath: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+div {
+    text-align: center;
+}
+.div1{
+    width: 50%;
+    min-height: 450px;
+    float: left;
+}
+.div2{
+    width: 50%;
+    min-height: 450px;
+    display: table;
+    margin-left: 50%;
+}
+
+.talign {
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center;
+    font-size: 26px;
+}
+
+.footer{
+    box-shadow: 0px 0px 24px #646464;
+    clear: left;
+    background: #333333;
+    min-height: 70px;
+}
+
+h1 {
+    box-shadow: 0px 0px 24px #646464;
+    margin-bottom: 70px;
+    margin-top: 0;
+    line-height: 70px;
+    text-align: center;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+}
